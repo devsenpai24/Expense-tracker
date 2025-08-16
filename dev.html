@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dev.css">
+</head>
+<body>
+    <div class="container">
+        <!-- display expense and income -->
+        <div id="expense" >
+            <div><h2>Balance:</h2></div>
+            <div>
+                <div>
+                    <h2>Total Income</h2>
+                    <P></P>
+                </div>
+                <div> <h2> Total Expense</h2>
+                    <P></P>
+                </div>
+            </div>
+            
+        </div>
+        <!-- display option to enter expense and income -->
+        <div>
+            <h2>Add New</h2>
+            <div>
+                <p>Entry type</p>
+                <select name="entry" id="entry1" >
+                    <option value="income">Income</option>
+                    <option value="expense">expense</option>
+                </select>
+            </div>
+            <div>
+                <label for="Name">Name:</label>
+                <input type="text" placeholder="name">
+            </div>
+            <div>
+                <label for="Amount">Amount:</label>
+                <input type="number" placeholder="0">
+            </div>
+            <button>Enter</button>
+        </div>
+        <!-- history -->
+        <div>
+            <h2>History</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>S.no</th>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Amount</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody id="history"></tbody>
+            </table>
+            
+        </div>
+    </div>
+    <script src="dev.js"></script>
+</body>
+</html>

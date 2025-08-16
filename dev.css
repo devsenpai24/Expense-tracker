@@ -1,0 +1,141 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: #f5f7fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .container {
+    background: #fff;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  /* Balance section */
+  #expense {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #expense h2 {
+    margin-bottom: 10px;
+  }
+  
+  #expense > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  #expense > div:last-child div {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    background: #f1f1f1;
+  }
+  
+  #expense > div:last-child div:first-child {
+    background: #e7f8ed;
+    color: #2e7d32;
+  }
+  
+  #expense > div:last-child div:last-child {
+    background: #fdecea;
+    color: #c62828;
+  }
+  
+  /* Add New section */
+  h2 {
+    margin: 15px 0;
+    color: #444;
+  }
+  
+  label, p {
+    display: block;
+    margin: 8px 0 4px;
+    font-weight: bold;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #43a047;
+  }
+  
+  /* History section */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background: #f1f1f1;
+  }
+  
+  .delete-btn {
+    background: #ff5c5c;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background: #e04848;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    #expense > div:last-child {
+      flex-direction: column;
+    }
+  
+    table th, table td {
+      font-size: 14px;
+      padding: 6px;
+    }
+  }
+  
